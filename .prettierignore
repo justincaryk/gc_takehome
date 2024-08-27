@@ -1,0 +1,9 @@
+package-lock.json
+yarn.lock
+.yarn
+dist
+node_modules
+.next
+build
+scripts
+.sql

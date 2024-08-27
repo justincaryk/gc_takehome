@@ -1,0 +1,15 @@
+services:
+  game-changer-postgres:
+    image: postgres:13
+    container_name: game-changer-postgres
+    environment:
+      POSTGRES_DB: ${DATABASE}
+      POSTGRES_USER: ${PG_USER}
+      POSTGRES_PASSWORD: ${PG_PASSWORD}
+    ports:
+      - '${PG_PORT}:5432'
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+
+volumes:
+  pgdata: {}
