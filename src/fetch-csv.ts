@@ -30,6 +30,7 @@ const fetchData = async () => {
   try {
     const response = await fetch(signedUrl);
     if (!response.ok) {
+      console.error(response);
       throw new Error(`HTTP error! status: ${response.status}`);
     }
 

@@ -1,5 +1,7 @@
 node_modules
 certificate.csr
 certificate.pem
+private_key.pem
 .env
 data.csv
+Instructions.pdf
